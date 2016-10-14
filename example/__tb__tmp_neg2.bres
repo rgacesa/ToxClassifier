@@ -1,0 +1,52 @@
+# BLASTP 2.2.31+
+# Query: seq1
+# Database: ../dbs/db_neg2.fa
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score, % query coverage per subject, % positives, query length, subject length, subject title
+# 10 hits found
+seq1	tr|M9SZR1|M9SZR1_CYLRU	35.94	64	36	1	1	64	23	81	1e-06	40.0	90	51.56	71	82	3FTx-Cyl-1 OS=Cylindrophis ruffus PE=2 SV=1
+seq1	tr|A7X3Q9|A7X3Q9_TRIBI	38.71	62	35	1	3	64	27	85	4e-05	35.4	87	46.77	71	85	3FTx-Tri1 OS=Trimorphodon biscutatus PE=2 SV=1
+seq1	tr|V8N4I1|V8N4I1_OPHHA	37.10	62	31	3	3	64	24	77	5e-04	32.3	87	45.16	71	78	Uncharacterized protein OS=Ophiophagus hannah GN=L345_17093 PE=4 SV=1
+seq1	tr|A7X3U4|A7X3U4_THRJA	34.55	55	29	2	12	65	39	87	7e-04	32.3	76	43.64	71	88	3FTx-Thr2 OS=Thrasops jacksonii PE=2 SV=1
+seq1	tr|C6JUP4|C6JUP4_MICCO	34.48	58	26	3	9	64	31	78	0.002	30.8	79	51.72	71	79	3FTx OS=Micrurus corallinus PE=2 SV=1
+seq1	tr|R4G7H5|R4G7H5_9SAUR	35.48	62	33	3	3	64	24	78	0.003	30.8	87	48.39	71	79	3FTx-Fur-64 OS=Furina ornata PE=2 SV=1
+seq1	tr|R4FKA6|R4FKA6_9SAUR	33.87	62	34	3	3	64	24	78	0.010	29.3	87	43.55	71	79	3FTx-Pse-288 OS=Pseudonaja modesta PE=2 SV=1
+seq1	tr|R4G326|R4G326_9SAUR	33.87	62	34	3	3	64	24	78	0.010	29.3	87	43.55	71	79	3FTx-Pse-290 OS=Pseudonaja modesta PE=2 SV=1
+seq1	tr|A0A098LWV3|A0A098LWV3_9SAUR	50.00	26	13	0	39	64	62	87	0.010	29.3	37	61.54	71	88	3Ftx B OS=Opheodrys aestivus PE=2 SV=1
+seq1	tr|A7X3U7|A7X3U7_THRJA	30.36	56	34	1	9	64	36	86	0.013	28.9	79	41.07	71	89	3FTx-Thr3 OS=Thrasops jacksonii PE=2 SV=1
+# BLASTP 2.2.31+
+# Query: seq2
+# Database: ../dbs/db_neg2.fa
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score, % query coverage per subject, % positives, query length, subject length, subject title
+# 10 hits found
+seq2	tr|A0A0E3STR3|A0A0E3STR3_LOXRU	87.04	270	35	0	35	304	1	270	2e-178	496	89	94.07	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3X1R4|A0A0E3X1R4_LOXRU	87.04	270	35	0	35	304	1	270	3e-178	495	89	93.70	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3SUZ9|A0A0E3SUZ9_LOXRU	85.93	270	38	0	35	304	1	270	8e-177	491	89	92.96	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3SV03|A0A0E3SV03_LOXRU	85.56	270	39	0	35	304	1	270	2e-176	491	89	92.96	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3STR5|A0A0E3STR5_LOXRU	85.19	270	40	0	35	304	1	270	8e-175	486	89	92.22	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3SV10|A0A0E3SV10_9ARAC	84.44	270	42	0	35	304	1	270	5e-174	484	89	92.22	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles sp. La Gomera GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3SUZ4|A0A0E3SUZ4_9ARAC	85.56	270	39	0	35	304	1	270	8e-174	484	89	92.22	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles sp. La Gomera GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3X1T0|A0A0E3X1T0_9ARAC	84.81	270	41	0	35	304	1	270	4e-173	482	89	91.85	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles sp. Gran Canaria 1 GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3X1R9|A0A0E3X1R9_LOXRU	84.07	270	43	0	35	304	1	270	2e-171	478	89	91.11	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles rufescens GN=SicTox PE=2 SV=1
+seq2	tr|A0A0E3X317|A0A0E3X317_9ARAC	84.07	270	43	0	35	304	1	270	6e-171	477	89	91.11	305	271	Sphingomyelinase D-like protein (Fragment) OS=Loxosceles sp. La Gomera GN=SicTox PE=2 SV=1
+# BLASTP 2.2.31+
+# Query: seq3
+# Database: ../dbs/db_neg2.fa
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score, % query coverage per subject, % positives, query length, subject length, subject title
+# 10 hits found
+seq3	tr|H2Q707|H2Q707_PANTR	97.97	148	3	0	1	148	1	148	6e-106	300	100	98.65	148	148	Phospholipase A(2) OS=Pan troglodytes GN=PLA2G1B PE=3 SV=1
+seq3	tr|H2NIV2|H2NIV2_PONAB	97.30	148	4	0	1	148	1	148	4e-105	298	100	97.97	148	148	Phospholipase A(2) OS=Pongo abelii GN=PLA2G1B PE=3 SV=1
+seq3	tr|G1S0C2|G1S0C2_NOMLE	94.59	148	8	0	1	148	1	148	2e-92	266	100	97.97	148	148	Phospholipase A(2) OS=Nomascus leucogenys GN=PLA2G1B PE=3 SV=1
+seq3	tr|F6TIZ9|F6TIZ9_MACMU	93.92	148	9	0	1	148	1	148	3e-91	263	100	96.62	148	148	Phospholipase A(2) OS=Macaca mulatta GN=PLA2G1B PE=3 SV=1
+seq3	tr|A0A0D9S4I0|A0A0D9S4I0_CHLSB	93.92	148	9	0	1	148	1	148	4e-91	263	100	96.62	148	148	Phospholipase A(2) OS=Chlorocebus sabaeus GN=PLA2G1B PE=3 SV=1
+seq3	tr|G7N5T3|G7N5T3_MACMU	93.24	148	10	0	1	148	1	148	3e-90	260	100	95.95	148	148	Phospholipase A(2) OS=Macaca mulatta GN=EGK_04257 PE=3 SV=1
+seq3	tr|G9KGX8|G9KGX8_MUSPF	84.03	144	23	0	2	145	1	144	2e-89	258	97	90.28	148	144	Phospholipase A(2) (Fragment) OS=Mustela putorius furo PE=2 SV=1
+seq3	tr|G7PIU0|G7PIU0_MACFA	88.51	148	17	0	1	148	1	148	3e-88	255	100	90.54	148	148	Phospholipase A(2) OS=Macaca fascicularis GN=EGM_03820 PE=3 SV=1
+seq3	tr|G5B779|G5B779_HETGA	78.77	146	31	0	1	146	1	146	6e-87	252	99	89.04	148	146	Phospholipase A(2) OS=Heterocephalus glaber GN=GW7_05270 PE=3 SV=1
+seq3	tr|A0A091CVU2|A0A091CVU2_FUKDA	79.45	146	30	0	1	146	1	146	3e-86	250	99	89.04	148	146	Phospholipase A(2) OS=Fukomys damarensis GN=H920_14978 PE=3 SV=1
+# BLASTP 2.2.31+
+# Query: seq4
+# Database: ../dbs/db_neg2.fa
+# Fields: query id, subject id, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score, % query coverage per subject, % positives, query length, subject length, subject title
+# 1 hits found
+seq4	tr|H2LH75|H2LH75_ORYLA	41.38	29	16	1	196	224	147	174	6.4	26.2	5	62.07	553	185	Uncharacterized protein OS=Oryzias latipes GN=LOC101165734 PE=4 SV=1
+# BLAST processed 4 queries
