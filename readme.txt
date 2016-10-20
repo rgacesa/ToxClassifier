@@ -1,6 +1,6 @@
 ToxClassifier, developed by:
  - Ranko Gacesa, King's College London under supervision of Dr. Paul Long, King's College London
- - last update: 28/04/2016
+ - last update: 20/10/2016
 
 ------------------------------------------------------------------------------------
 ToxClassifier code
