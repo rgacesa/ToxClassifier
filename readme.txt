@@ -21,6 +21,7 @@ To use offline classifier, do following steps:
 - we can at best provide very limited support for running this code locally; contact ranko.gacesa@kcl.ac.uk with questions and issues; for running it on large datasets it might be easier for us to run the sample then provide support for installing it on different system
 - please cite the appropriate article (see http://bioserv7.bioinfo.pbf.hr/ToxClassifier/) if you used this code or its web-service variant
 
+--------------------------
 Actually running the code:
 --------------------------
 
@@ -71,6 +72,7 @@ OR
 -> output is csv format with classifier results (0 = not toxin, 1 = toxin) for each input sequence
 
 Warnings/notes:
+---------------
 
 A) Vectorization script (toxClassVectorize.py)
 - this is python script, written for python2.7, UBUNTU linux 12.04; it was not tested under other environments and might (or not) work
@@ -90,3 +92,48 @@ and selection of other packages connected to R caret; make sure they are all ins
 and working correctly   
   - also check paths if models cannot be found
   - machine learning models are in MLModels folder, classifier is utterly useless without them and will not work
+
+Diagnostics / debugging:
+-------------------------
+Following 'common' problems might occur with offline classifier:
+
+A) example seemingly works, but returns all NAs instead of numbers (out.csv will have rows such as "1",">seq1","NA","NA",...,"NA"
+This is known issue and might be caused by one of: 
+
+   1) problems with models: models (in MLModels folder) were uploaded on git with git large file storage (https://git-lfs.github.com/) as they are too large to fit normally; this seem to be causing some problems with cloning; if model files are very small (aaBiFreqGBM56540.RData and rest of files in the folder should be in range of 7.5 - 150 MB), they are likely misdownloaded and only references to files instead of actual models; this problem was observed with git version 1.8.2 (cause unknown); it should work correctly with git version 2.10.1 or with git version 1.9.1, coupled with git-lfs-1.4.2 (tested 13/10/2016, worked)
+
+  2) problems with R libraries: Classifier works on R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree", with caret library version 6.0-64, on Ubuntu 12.04.5 LTS; while Ubuntu version does not seem to matter (hopefully), it WILL NOT WORK with R version 3.3.1 (2016-06-21) -- "Bug in Your Hair" coupled with caret version caret_6.0-70
+
+Detailed breakdown of libraries for working version is: 
+
+R version 3.2.3 (2015-12-10)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu precise (12.04.5 LTS)
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+[1] parallel  splines   stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+[1] plyr_1.8.3      gbm_2.1.1       survival_2.38-3 kernlab_0.9-22 
+[5] argparse_1.0.1  proto_0.3-10    caret_6.0-64    ggplot2_2.0.0  
+[9] lattice_0.20-33
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.3        magrittr_1.5       MASS_7.3-45        getopt_1.20.0     
+ [5] munsell_0.4.2      colorspace_1.2-6   rjson_0.2.15       foreach_1.4.3     
+ [9] minqa_1.2.4        stringr_1.0.0      car_2.1-1          tools_3.2.3       
+[13] nnet_7.3-11        pbkrtest_0.4-5     grid_3.2.3         gtable_0.1.2      
+[17] nlme_3.1-124       mgcv_1.8-10        quantreg_5.19      MatrixModels_0.4-1
+[21] iterators_1.0.8    lme4_1.1-10        findpython_1.0.1   Matrix_1.2-3      
+[25] nloptr_1.0.4       reshape2_1.4.1     codetools_0.2-14   stringi_1.0-1     
+[29] scales_0.3.0       stats4_3.2.3       SparseM_1.7
+
