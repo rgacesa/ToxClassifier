@@ -137,3 +137,11 @@ loaded via a namespace (and not attached):
 [25] nloptr_1.0.4       reshape2_1.4.1     codetools_0.2-14   stringi_1.0-1     
 [29] scales_0.3.0       stats4_3.2.3       SparseM_1.7
 
+B) First five classifiers return NAs and last four ("SToxB_GBM", "SToxB_SVM", "BIF_SVM", "BIF_GBM") work: 
+
+Problem can be caused due to problems wiht parsing issues of sequence headers; parser is designed to handle UniProt sequence IDs
+and might not work correctly with GenBank or other sources and this can lead to unexpected behavior of R script for classification.
+It can also be caused by duplicate sequence IDs; note that parsing is unlikely to work properly with custom IDs or unusual sources of data. 
+
+Renaming sequences to for example: >seq1, >seq2, ... >seqn might solve this issue
+
